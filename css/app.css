@@ -21,7 +21,6 @@ body {
 nav a:link {
   display: inline-block;
   margin-right: 30px;
-  margin-top: 10px;
 }
 nav a:link:last-child {
   margin-right: 0;
@@ -114,8 +113,10 @@ a:visited {
   font-size: 18px;
 }
 .related-author {
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 0;
+  font-style: italic;
 }
 .related {
   list-style: none;
@@ -125,14 +126,14 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
-  width: 500px;
+  width: 700px;
 }
 article {
   margin-bottom: 60px;
 }
 .post-related {
-  width: 250px;
-  height: 250px;
+  width: 75px;
+  height: 75px;
 }
 button {
   font-size: 22px;
@@ -141,4 +142,31 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+/* FLEX_BOX */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
 }
